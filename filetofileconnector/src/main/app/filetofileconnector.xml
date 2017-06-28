@@ -7,6 +7,7 @@
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
     
+    
     <flow name="filetofileconnectorFlow">
         <file:inbound-endpoint path="C:\Users\admin\Desktop\Hari\Input" moveToDirectory="C:\Users\admin\Desktop\Hari\Backup" responseTimeout="10000" doc:name="File"/>
         <logger message="Transfering File : #[message.inboundProperties.originalFilename]" level="INFO" doc:name="Logger"/>
